@@ -1,0 +1,22 @@
+body {
+    background-color: blueviolet;
+    color:white;
+}
+div.section1{
+    background-color: aqua;
+    color: black;
+}
+div.section2{
+    background-color: brown;
+    color: blue;
+}
+.section1 h1 {
+    text-align: center;
+    background-color: aquamarine;
+    color: bisque;
+}
+.section2 > h1 {
+    text-align: center;
+    background-color: red;
+    color: wheat;
+}

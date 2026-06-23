@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Class seletor</title>
+    <style>
+      body {
+        background-color: rgb(164, 110, 214);
+      }
+
+      div.section1 {
+        background-color: black;
+        color: white;
+      }
+
+      .section2 {
+        background-color: yellow;
+        color: brown;
+      }
+      /* decendent selector */
+      .section1 h1 {
+        text-align: center;
+        background-color: aqua;
+        color: black;
+      }
+
+      .section2 > h1 {
+        text-align: center;
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- section 1 -->
+    <div class="section1">
+      <h1>This is Heading</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+        voluptatum. Qui enim incidunt sapiente, magnam nulla consequatur
+        reiciendis dolorum porro. Molestias eligendi accusamus, ad rem animi
+      </p>
+      <ol>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cat</li>
+      </ol>
+    </div>
+    <!-- section 2 -->
+    <div class="section2">
+      <h1>This is heading</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In delectus
+        aperiam eos odit eaque corporis at harum aliquid natus consequatur nam
+        exercitationem possimus minus quos facilis est, provident impedit sequi.
+        Voluptates natus voluptatem vel. Aspernatur, enim illo quae quasi cumque
+        expedita excepturi odio ipsum vitae harum facere perspiciatis quis,
+        beatae quidem non delectus hic voluptas id nihil officiis? Unde, eaque?
+      </p>
+    </div>
+  </body>
+</html>
+--------------------------------------------------------------------------------------------
+<html>
+  <head>
+    <title>text css</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      p {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow:
+          2px 2px 4px violet,
+          -2px -2px 4px violet;
+
+        font-size: 50px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <p>I am sreevalli</p>
+  </body>
+</html>
