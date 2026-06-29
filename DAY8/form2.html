@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sign Up Form</title>
+    <style>
+      body {
+        background-image: linear-gradient(to right, hotpink, purple);
+      }
+
+      .form-area {
+        height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      form {
+        background-color: white;
+        width: 350px;
+        height: 400px;
+        padding: 30px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      form > h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bolder;
+      }
+      form > input {
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+      .submit-buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      button {
+        margin-top: 10px;
+        width: 120px;
+        height: 40px;
+        background-color: hotpink;
+        border-radius: 10px;
+        border: none;
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      button:hover {
+        background-color: purple;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-area">
+      <form>
+        <h2>Sign Up</h2>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" />
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass" />
+
+        <label for="cpass">Confirm Password</label>
+        <input type="password" id="cpass" name="cpass" />
+        <div class="submit-buttons">
+          <a href="signin.html">Alread User? Go to Login</a>
+          <button type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
