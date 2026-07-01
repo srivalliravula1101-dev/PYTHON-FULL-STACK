@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      img {
+        width: 150px;
+        height: auto;
+      }
+      #car {
+        animation: startCar 10s linear 3s infinite normal;
+      }
+      @keyframes startCar {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(1100px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+
+      #bike {
+        animation: startBike;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-timing-function: ease;
+        animation-iteration-count: 3;
+        animation-direction: alternate-reverse;
+      }
+      @keyframes startBike {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(1100px);
+        }
+      }
+
+      #truck {
+        animation: startTruck;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode: backwards;
+      }
+      @keyframes startTruck {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(1100px);
+        }
+      }
+      #flight {
+        animation: startflight;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 5;
+      }
+      @keyframes startflight {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(1100px);
+        }
+      }
+      #ship {
+        animation: startship;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+
+      #ship:hover {
+        animation-play-state: paused;
+      }
+      @keyframes startship {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(1100px);
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <img id="car" src="car.png" alt="error loading image" /><br /><br />
+    <img id="bike" src="bike.png" alt="error" /><br /><br />
+
+    <img id="truck" src="truck.webp" alt="error" /><br /><br />
+    <img id="flight" src="flight.jpg" alt="error" /><br /><br />
+    <img id="ship" src="ship.jpg" alt="error" /><br /><br />
+  </body>
+</html>
