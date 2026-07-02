@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>navigation bar</title>
+    <style>
+      * {
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightgreen;
+      }
+
+      .logo {
+        margin-left: 40px;
+      }
+      .quicklinks {
+        width: 50%;
+        display: flex;
+        margin-right: 0px;
+        justify-content: end;
+      }
+
+      .quicklinks > li {
+        background-color: rgb(122, 119, 119);
+        list-style-type: none;
+        padding: 15px;
+        color: white;
+        font-weight: bolder;
+        border: 1px solid black;
+        width: 30%;
+        text-align: center;
+      }
+      .quicklinks > li:hover {
+        background-color: rgb(58, 56, 56);
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="logo">
+        <h1>LOGO</h1>
+      </div>
+      <div class="quicklinks">
+        <li>Home</li>
+        <li>About</li>
+        <li>Career</li>
+        <li>Help</li>
+        <li>More</li>
+      </div>
+    </div>
+  </body>
+</html>
