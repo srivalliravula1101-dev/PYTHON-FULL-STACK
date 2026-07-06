@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .navigation-section {
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo {
+        height: 40px;
+        background-color: rgb(46, 218, 46);
+      }
+      .quicklinks {
+        background-color: grey;
+        height: 40px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 400px) {
+        .navigation-section {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navigation-section">
+      <div class="logo"><h1>LOGO</h1></div>
+      <div class="quicklinks child1"><h3>Home</h3></div>
+      <div class="quicklinks child2"><h3>About</h3></div>
+      <div class="quicklinks child3"><h3>Career</h3></div>
+      <div class="quicklinks child4"><h3>Services</h3></div>
+      <div class="quicklinks child5"><h3>Help</h3></div>
+    </div>
+  </body>
+</html>
